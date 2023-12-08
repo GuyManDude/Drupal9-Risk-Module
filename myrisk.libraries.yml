@@ -1,0 +1,11 @@
+# myrisk_custom_block.libraries.yml
+myrisk_css:
+  version: 1.x
+  css:
+    theme:
+      css/myrisk.css: {}
+
+myrisk_js:
+  version: 1.x
+  js:
+    js/myrisk.js: {}

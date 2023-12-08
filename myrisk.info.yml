@@ -1,0 +1,11 @@
+name: 'My Risk Grid'
+type: module
+description: 'My Risk Grid'
+package: 'Custom'
+core_version_requirement: ^9 || ^10
+dependencies: drupal:block
+
+libraries:
+  - myrisk/myrisk_css
+  - myrisk/myrisk_js
+

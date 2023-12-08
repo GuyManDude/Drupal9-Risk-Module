@@ -1,0 +1,171 @@
+/* myrisk.css */
+.myrisk-test {
+  color: blue;
+  font-weight: bold;
+  font-size: 25px;
+  /* Add your custom styles here */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(4, 60px);
+  gap: 5px;
+  margin: 20px 0px 0px 40px;
+  #width: 160px;
+}
+
+.grid-item {
+  box-sizing: border-box; /* include padding in element width/height */
+  border: none; /* remove border */
+  padding: 12px; /* add padding to maintain cell size */
+  text-align:center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.yel {
+  background-color: #ffd633;
+}
+
+.orng {
+  background-color: #eb870e;
+}
+
+.grn {
+  background-color: #0e8508;
+}
+
+.redish {
+  background-color: #cc0000;
+}
+
+.score-container {
+  margin: 45px 0px 0px -70px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex; /* Add this line to make it a flex container */
+  align-items: center; /* Align items vertically in the flex container */
+}
+
+.reset-button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10% / 50%;
+}
+
+.reset-button:hover {
+  background-color: #ccc;
+}
+
+.labels-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.severity-label {
+  position: absolute;
+  top: 158px;
+  left: 35px;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.severity-label span {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  font-size: 18px;
+}
+
+.probability-label {
+  margin: 0px 0px 0px 77px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.probability-label span {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.legend-container {
+  padding: 20px;
+  display: none;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  z-index: 1;
+  border: none;
+}
+
+
+.legend-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.legend-button {
+  margin-left: 10px;
+    font-size: 16px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  #border-radius: 10% / 50%;
+  border-radius: 6px;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 40px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 6px;
+  z-index: 1;
+  margin: -80px 0px 0px -35px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.legend-button:hover + .tooltip {
+  visibility: visible;
+}
+
+.legend-button:hover {
+  cursor: pointer;  
+}
+
+.score-rating {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0066cc;
+}
+.score-rating-text {
+  line-height: 10%;
+}
